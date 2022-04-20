@@ -1,7 +1,21 @@
 body {
   padding-top: 50px;
+  
 }
 .starter-template {
   padding: 40px 15px;
   text-align: left;
+  
 }
+
+a{
+background-color: rgb(31, 199, 255);
+
+
+
+}
+.navbar{
+  background-color: rgb(31, 199, 255);
+}
+
+
