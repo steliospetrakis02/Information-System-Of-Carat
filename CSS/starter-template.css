@@ -1,6 +1,7 @@
 body {
   padding-top: 50px;
   
+  
 }
 .starter-template {
   padding: 40px 15px;
@@ -10,12 +11,19 @@ body {
 
 a{
 background-color: rgb(31, 199, 255);
-
-
+font-size: 30px;
 
 }
 .navbar{
   background-color: rgb(31, 199, 255);
 }
 
+li{
+  color: rgb(31, 199, 255);
+  
+}
+.dropdown{
+  font-size: 30px;
+  padding: 20px 15px;
+}
 
