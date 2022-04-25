@@ -1,12 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>MICROSOFT</title>
+  <title>Microsoft Reporting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<h1> THIS IS MIRCROSOFT </h1>
+<div class="container-fluid">
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#latest-report" style="font-size: 20px; color:darkgreen">Latest Report</a></li>
+    <li><a data-toggle="tab" href="#menu1" style="font-size: 20px; color:darkgreen">History</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="font-size: 20px; color:darkgreen">Client Goals</a></li>
+    <li><a data-toggle="tab" href="#menu3" style="font-size: 20px; color:darkgreen">Campaign Evaluation</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="latest-report" class="tab-pane fade in active">
+        <div class="row">
+            <div class="col-sm-11"></div>
+                <div class="col-sm-1">
+                    <a href="#" class="btn btn-success btn-lg" style="margin-top: 5px;">
+                        <span class="glyphicon glyphicon-print"></span> Print 
+                    </a>
+                </div>
+        </div>
+        
+    </div>
+    <div id="menu1" class="tab-pane fade">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="container-fluid">
+                <h2>View previous reports</h2>
+                <p>Type only the year of a particular report</p>  
+                <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
+                <br>
+                <ul class="list-group" id="myList">
+                  <li class="list-group-item">Aegean-Campaign-2022-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2021-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2021-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2020-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2020-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2019-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2019-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2018-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2018-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2017-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2017-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2016-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2016-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2015-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2015-a</li>
+                  <li class="list-group-item">Aegean-Campaign-2014-b</li>
+                  <li class="list-group-item">Aegean-Campaign-2014-a</li>
+                  
+                </ul>  
+              </div>
+              
+              <script>
+              $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                  var value = $(this).val().toLowerCase();
+                  $("#myList li").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                  });
+                });
+              });
+              </script>
+            </div>
+        </div>
+       
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+        <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Goals Submitted!</h4>
+                        </div>
+                    <div class="modal-body">
+                        <p>Thank you for sharing your preferences and desired goals.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                     </div>
+                    </div>
+      
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+            </div>
+        </div>
+       
+
+     
+    </div>
+    <div id="menu3" class="tab-pane fade">
+        <div class="container">
+            <h2>Media Object</h2>
+            <p>The media object can also be top, middle or bottom-aligned with the "media-top", "media-middle" or "media-bottom" class:</p><br>
+            <div class="media">
+              <div class="media-left media-top">
+                <img src="../IMAGES/img_avatar.png" class="media-object" style="width:80px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Media Top</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="media">
+              <div class="media-left media-middle">
+                <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:80px">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Media Middle</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <hr>
+          </div>
+    </div>
+  </div>
+</div>
 
 
+  
 </body>
 </html>
