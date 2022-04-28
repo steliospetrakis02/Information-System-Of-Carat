@@ -11,7 +11,7 @@
 <body>
 
 <div class="container-fluid">
-  
+  <!-- Φτιάχνει την μπάρα του μενού πάνω πάνω-->
   <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#latest-report" style="font-size: 20px;">Latest Report</a></li>
     <li><a data-toggle="tab" href="#menu1" style="font-size: 20px;">History</a></li>
@@ -26,8 +26,10 @@
         <div class="row">
             <div class="col-sm-7">
               <br>
+              <!-- Πίνακας report-->
               <table class="table table-striped">
                 <thead>
+                  <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
                   <tr>
                     <th>Week</th>
                     <th>GRPs</th>
@@ -150,11 +152,15 @@
                     </tr>
                 </tbody>
               </table>
+              <!-- Ετικέτα κάτω από τον πίνακα-->
               <h3>Target Group: Adults 25-54</h3>
             </div>
+            <!-- Η από κάτω γραμμή μας πάει 4 θέσεις πιο αριστερά στην σελίδα(όπου όλες οριζόντια είναι 12)-->
             <div class="col-sm-4"></div>
+            <!-- Η από κάτω γραμμή δηλώνει ότι θα δευσμετεί 1 θέση (στις 12) για αυτό που θα βάλουμε-->
             <div class="col-sm-1">
               <br> 
+              <!-- Κουμπί για εκτύπωση (primary είναι για χρώμα)-->
               <a href="#" class="btn btn-primary btn-lg" onclick="window.print()">
                 <span class="glyphicon glyphicon-print" ></span> Print 
               </a>
@@ -166,6 +172,7 @@
         <div class="row">
             <div class="col-sm-6">
               <div class="container-fluid">
+                <!-- Λίστα ιστορικού που ανταποκρίνεται στην αναζήτηση-->
                 <h2>View previous reports</h2>
                 <p>Type only the year of a particular report (reporting occurs every 4 months)</p>  
                 <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
@@ -194,6 +201,7 @@
                 </ul>  
               </div>
               
+              <!-- Javascript για να ανταποκρίνεται στην αναζήτηση (περιορίζει τις επιλογές)-->
               <script>
               $(document).ready(function(){
                 $("#myInput").on("keyup", function() {
@@ -216,6 +224,7 @@
           <h1>TV</h1>
         </div>
         <div class="col-sm-1">
+          <!-- Chechboxes για τους δείκτες TV-->
           <label class="checkbox-inline">
             <input type="checkbox" value=""><h4>GRPs</h4>
           </label>
@@ -264,6 +273,7 @@
       <hr>
       <form>
         <div class="row" style="margin-top: 25px;">
+          <!-- Chechboxes για τους δείκτες του Internet-->
           <div class=col-sm-1>
             <h1>Internet</h1>
           </div>
@@ -293,13 +303,16 @@
       <div class="row">
         <div class="col-sm-5">
           <div class="form-group">
+            <!-- Τίτλος -->
             <label for="comment">How would you like your reports?</label>
+            <!-- Περιοχή για να γράψεις κείμενο-->
             <textarea class="form-control" rows="5" id="comment"></textarea>
           </div> 
         </div>
         <br><br><br>
         <div class="col-sm-1"></div>
         <div class="col-sm-3">
+           <!-- Κουμπί για submit -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" 
             data-target="#myModal">Submit</button>
           </div>
@@ -308,14 +321,17 @@
       <div class="row">
         <div class="col-sm-2">
           <div class="form-group">
+            <!-- Τίτλος και textarea μιας γραμμής-->
             <label for="usr">Available Budget:</label>
             <input type="text" class="form-control" id="usr">
           </div>
         </div>
         
+        <!-- Τίτλος-->
         <div class="col-sm-2"><h3>Planner's Estimation<br>for 65.000€:</h3></div>
           <div class="col-sm-8">
-          <table class="table table-striped">
+          <!-- Πίνακας των εκτιμήσεων-->
+            <table class="table table-striped">
             <thead>
               <tr>
                 <th>Week</th>
@@ -447,17 +463,20 @@
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
-                <div class="modal fade" id="myModal" role="dialog">
+              <!-- Στην ουσία μαυρίζει η γύρω οθόνη και πετάγεται ένα πλαίσιο μόλις πατήσεις το κουμπί submit-->  
+              <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Form complete!</h4>
+                              <!-- Αυτά θα γράφει μέσα το πλαίσιο--> 
+                              <h4 class="modal-title">Form complete!</h4>
                         </div>
                     <div class="modal-body">
                         <p>Thank you for sharing your preferences.</p>
                     </div>
+                    <!-- Κουμπί για να φύγει το πλαίσιο-->
                     <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                      </div>
@@ -472,9 +491,11 @@
             <br>
             <div class="media">
               <div class="media-left media-top">
+                <!-- Εικονίδιο χρήστη-->
                 <img src="../IMAGES/img_avatar.png" class="media-object" style="width:100px">
               </div>
               <div class="media-body">
+                <!-- Τίτλος και περιεχόμενα σχολίων-->
                 <h3 class="media-heading">Aegean-Campaign-2022-a</h3>
                 <p style="font-size: 17px;">Excellent performance, this campaign has exceeded all the
                   estimated indicators.
@@ -485,9 +506,11 @@
             <br>
             <div class="media">
               <div class="media-left media-middle">
+                <!-- Εικονίδιο χρήστη-->
                 <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:100px">
               </div>
               <div class="media-body">
+                <!-- Τίτλος και περιεχόμενα σχολίων-->
                 <h3 class="media-heading">Aegean-Campaign-2019-b</h3>
                 <p style="font-size: 17px;">It could have gone better, comparing with last month's indicators,
                 the result is still satisfying though.</p>
