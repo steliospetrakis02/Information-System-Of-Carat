@@ -16,7 +16,7 @@
     <li class="active"><a data-toggle="tab" href="#latest-report" style="font-size: 20px; 
     color:darkorange">Latest Report</a></li>
     <li><a data-toggle="tab" href="#menu1" style="font-size: 20px; color:darkorange">History</a></li>
-    <li><a data-toggle="tab" href="#menu2" style="font-size: 20px; color:darkorange">Client Goals</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="font-size: 20px; color:darkorange">Preferences</a></li>
     <li><a data-toggle="tab" href="#menu3" style="font-size: 20px; color:darkorange">Campaign Evaluation</a></li>
     <li><a href="../HTML/Planner_screen.html" class="btn btn-warning active"  role="button" 
       style="font-size: 20px;">Change Client</a></li>
@@ -25,103 +25,425 @@
   <div class="tab-content">
     <div id="latest-report" class="tab-pane fade in active">
         <div class="row">
-            <div class="col-sm-11"></div>
-                <div class="col-sm-1">
-                    <a href="#" class="btn btn-warning btn-lg" style="margin-top: 5px;">
-                        <span class="glyphicon glyphicon-print"></span> Print 
-                    </a>
-                </div>
+            <div class="col-sm-7">
+              <br>
+              <!-- Πίνακας report-->
+              <table class="table table-striped">
+                <thead>
+                  <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
+                  <tr>
+                    <th>TV Spot</th>
+                    <th>GRPs</th>
+                    <th>Insertions</th>
+                    <th>Duration</th>
+                    <th>SOV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MasterCard-TV-Spot-1</td>
+                    <td>180</td>
+                    <td>890</td>
+                    <td>12"</td>
+                    <td>3%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-2</td>
+                    <td>199</td>
+                    <td>754</td>
+                    <td>9"</td>
+                    <td>5%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-3</td>
+                    <td>162</td>
+                    <td>801</td>
+                    <td>12"</td>
+                    <td>5%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-4</td>
+                    <td>204</td>
+                    <td>1006</td>
+                    <td>8"</td>
+                    <td>8%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-5</td>
+                    <td>219</td>
+                    <td>988</td>
+                    <td>6"</td>
+                    <td>4%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-6</td>
+                    <td>130</td>
+                    <td>613</td>
+                    <td>14"</td>
+                    <td>1%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-7</td>
+                    <td>167</td>
+                    <td>685</td>
+                    <td>9"</td>
+                    <td>4%</td>
+                  </tr>
+                  <tr>
+                    <td>MasterCard-TV-Spot-8</td>
+                    <td>287</td>
+                    <td>1170</td>
+                    <td>11"</td>
+                    <td>7%</td>
+                  <tr>
+                      <td>MasterCard-TV-Spot-9</td>
+                      <td>312</td>
+                      <td>1561</td>
+                      <td>7"</td>
+                      <td>11%</td>
+                    </tr>
+                    <tr>
+                      <td>MasterCard-TV-Spot-10</td>
+                      <td>192</td>
+                      <td>884</td>
+                      <td>13"</td>
+                      <td>2%</td>
+                    </tr>
+                    <tr>
+                      <td>MasterCard-TV-Spot-11</td>
+                      <td>183</td>
+                      <td>607</td>
+                      <td>13"</td>
+                      <td>1%</td>
+                    </tr>
+                    <tr>
+                      <td>MasterCard-TV-Spot-12</td>
+                      <td>142</td>
+                      <td>577</td>
+                      <td>10"</td>
+                      <td>1%</td>
+                    </tr>
+                    
+                </tbody>
+              </table>
+              <!-- Ετικέτα κάτω από τον πίνακα-->
+              <h3>Target Group: Adults 25-54</h3>
+            </div>
+            <!-- Η από κάτω γραμμή μας πάει 4 θέσεις πιο αριστερά στην σελίδα(όπου όλες οριζόντια είναι 12)-->
+            <div class="col-sm-4"></div>
+            <!-- Η από κάτω γραμμή δηλώνει ότι θα δευσμετεί 1 θέση (στις 12) για αυτό που θα βάλουμε-->
+            <div class="col-sm-1">
+              <br> 
+              <!-- Κουμπί για εκτύπωση (primary είναι για χρώμα)-->
+              <a style="background-color:darkorange;" href="#" class="btn btn-success btn-lg" onclick="window.print()">
+                <span  class="glyphicon glyphicon-print" ></span> Print 
+              </a>
+            </div>
         </div>
+       
         
     </div>
-    <div id="menu1" class="tab-pane fade">
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="container-fluid">
-                <h2>View previous reports</h2>
-                <p>Type only the year of a particular report</p>  
-                <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
-                <br>
-                <ul class="list-group" id="myList">
-                  <li class="list-group-item">Aegean-Campaign-2022-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-a</li>
-                  
-                </ul>  
-              </div>
-              
-              <script>
-              $(document).ready(function(){
-                $("#myInput").on("keyup", function() {
-                  var value = $(this).val().toLowerCase();
-                  $("#myList li").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                  });
-                });
-              });
-              </script>
-            </div>
-        </div>
-       
-    </div>
-    <div id="menu2" class="tab-pane fade">
-        <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
-        <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-2">
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Goals Submitted!</h4>
-                        </div>
-                    <div class="modal-body">
-                        <p>Thank you for sharing your preferences and desired goals.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-                     </div>
-                    </div>
-      
-                    </div>
-                </div>
-                <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
-            </div>
-        </div>
-       
+  
 
-     
+  <div id="menu1" class="tab-pane fade">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="container-fluid">
+            <!-- Λίστα ιστορικού που ανταποκρίνεται στην αναζήτηση-->
+            <h2>View previous reports</h2>
+            <p>Type only the year of a particular report (reporting occurs annually)</p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
+            <br>
+            <ul class="list-group" id="myList">
+              <li class="list-group-item">MasterCard-Campaign-2022</li>
+              <li class="list-group-item">MasterCard-Campaign-2020</li>
+              <li class="list-group-item">MasterCard-Campaign-2018</li>
+              <li class="list-group-item">MasterCard-Campaign-2016</li>
+              <li class="list-group-item">MasterCard-Campaign-2014</li>
+              <li class="list-group-item">MasterCard-Campaign-2012</li>
+              <li class="list-group-item">MasterCard-Campaign-2010</li>
+              <li class="list-group-item">MasterCard-Campaign-2008</li>
+              <li class="list-group-item">MasterCard-Campaign-2006</li>
+              <li class="list-group-item">MasterCard-Campaign-2004</li>
+              <li class="list-group-item">MasterCard-Campaign-2002</li>
+              <li class="list-group-item">MasterCard-Campaign-2000</li>
+              <li class="list-group-item">MasterCard-Campaign-1998</li>
+            
+              
+            </ul>  
+          </div>
+          
+          <!-- Javascript για να ανταποκρίνεται στην αναζήτηση (περιορίζει τις επιλογές)-->
+          <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myList li").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+          </script>
+        </div>
     </div>
+   
+</div>
+
+<div id="menu2" class="tab-pane fade">
+  <br>
+  <form>
+  <div class="row" style="margin-top: 25px;">
+    <div class=col-sm-1>
+      <h1>TV</h1>
+    </div>
+    <div class="col-sm-1">
+      <!-- Chechboxes για τους δείκτες TV-->
+      <label class="checkbox-inline">
+        <input type="checkbox" value=""><h4>GRPs</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+        <input type="checkbox" value=""><h4>Reach 1+</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Reach 3+</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>SOV</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Insertions</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Duration</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Grps/Week</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Weeks</h4>
+      </label>
+    </div>
+    <div class="col-sm-1">
+      <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Weeks(4X)</h4>
+      </label>
+    </div>
+  </div>
+  <hr>
+  <form>
+    <div class="row" style="margin-top: 25px;">
+      <!-- Chechboxes για τους δείκτες του Internet-->
+      <div class=col-sm-1>
+        <h1>Internet</h1>
+      </div>
+      <div class="col-sm-1">
+        <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Impressions</h4>
+        </label>
+      </div>
+      <div class="col-sm-1">
+        <label class="checkbox-inline">
+          <input type="checkbox" value=""><h4>Clicks</h4>
+        </label>
+      </div>
+      <div class="col-sm-1">
+        <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>Click Rate</h4>
+        </label>
+      </div>
+      <div class="col-sm-1">
+        <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>Viewability</h4>
+        </label>
+      </div>
+    </div>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="form-group">
+        <!-- Τίτλος -->
+        <label for="comment">How would you like your reports?</label>
+        <!-- Περιοχή για να γράψεις κείμενο-->
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div> 
+    </div>
+    <br><br><br>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-3">
+       <!-- Κουμπί για submit -->
+        <button style="background-color:darkorange;"type="button" class="btn btn-success btn-lg" data-toggle="modal" 
+        data-target="#myModal">Submit</button>
+      </div>
+    </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="form-group">
+        <!-- Τίτλος και textarea μιας γραμμής-->
+        <label for="usr">Available Budget:</label>
+        <input type="text" class="form-control" id="usr">
+      </div>
+    </div>
+    
+    <!-- Τίτλος-->
+    <div class="col-sm-2"><h3>Planner's Estimation<br>for 180.000€:</h3></div>
+      <div class="col-sm-8">
+      <!-- Πίνακας των εκτιμήσεων-->
+      <table class="table table-striped">
+        <thead>
+          <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
+          <tr>
+            <th>TV Spot</th>
+            <th>GRPs</th>
+            <th>Insertions</th>
+            <th>Duration</th>
+            <th>SOV</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MasterCard-TV-Spot-1</td>
+            <td>180</td>
+            <td>890</td>
+            <td>12"</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-2</td>
+            <td>190</td>
+            <td>750</td>
+            <td>9"</td>
+            <td>4%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-3</td>
+            <td>160</td>
+            <td>800</td>
+            <td>10"</td>
+            <td>4%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-4</td>
+            <td>200</td>
+            <td>1000</td>
+            <td>8"</td>
+            <td>7%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-5</td>
+            <td>210</td>
+            <td>980</td>
+            <td>8"</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-6</td>
+            <td>130</td>
+            <td>610</td>
+            <td>11"</td>
+            <td>2%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-7</td>
+            <td>160</td>
+            <td>680</td>
+            <td>9"</td>
+            <td>3%</td>
+          </tr>
+          <tr>
+            <td>MasterCard-TV-Spot-8</td>
+            <td>280</td>
+            <td>1170</td>
+            <td>10"</td>
+            <td>6%</td>
+          <tr>
+              <td>MasterCard-TV-Spot-9</td>
+              <td>310</td>
+              <td>1560</td>
+              <td>7"</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <td>MasterCard-TV-Spot-10</td>
+              <td>190</td>
+              <td>880</td>
+              <td>13"</td>
+              <td>1%</td>
+            </tr>
+            <tr>
+              <td>MasterCard-TV-Spot-11</td>
+              <td>180</td>
+              <td>600</td>
+              <td>13"</td>
+              <td>1%</td>
+            </tr>
+            <tr>
+              <td>MasterCard-TV-Spot-12</td>
+              <td>140</td>
+              <td>570</td>
+              <td>10"</td>
+              <td>3%</td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+  </div>
+ </form>
+</div> 
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <!-- Στην ουσία μαυρίζει η γύρω οθόνη και πετάγεται ένα πλαίσιο μόλις πατήσεις το κουμπί submit-->  
+          <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <!-- Αυτά θα γράφει μέσα το πλαίσιο--> 
+                          <h4 class="modal-title">Form complete!</h4>
+                    </div>
+                <div class="modal-body">
+                    <p>Thank you for sharing your preferences.</p>
+                </div>
+                <!-- Κουμπί για να φύγει το πλαίσιο-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                 </div>
+                </div>
+            </div>
+    </div>
+   </div>
+  </div>
     <div id="menu3" class="tab-pane fade">
         <div class="container">
-            <h2>Media Object</h2>
-            <p>The media object can also be top, middle or bottom-aligned with the "media-top", "media-middle" or "media-bottom" class:</p><br>
+            <h2>Comments</h2>
+            <p></p><br>
             <div class="media">
               <div class="media-left media-top">
                 <img src="../IMAGES/img_avatar.png" class="media-object" style="width:80px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Top</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="media-heading"> MasterCard-Campaign-2018</h4>
+                <p> Truly impressed with how you have managed to meet every goal set before you</p>
+                
               </div>
             </div>
             <hr>
@@ -130,10 +452,9 @@
                 <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:80px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Middle</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="media-heading">MasterCard-Campaign-2016</h4>
+                <p>Thanks to your willingness to take risks and learn from mistakes, we solved a problem that could have cost the company a lot in the long run. Great work!</p>
+          
               </div>
             </div>
             <hr>
