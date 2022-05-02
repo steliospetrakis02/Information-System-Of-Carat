@@ -21,11 +21,98 @@
     <li><a href="../HTML/Planner_screen.html" class="btn btn-danger active"  role="button" 
       style="font-size: 20px;">Change Client</a></li>
   </ul>
-
+ 
   <div class="tab-content">
     <div id="latest-report" class="tab-pane fade in active">
         <div class="row">
-            <div class="col-sm-11"></div>
+            <div class="col-sm-11">
+              <br>
+               <!-- Πίνακας report-->
+              <table class="table table-striped">
+                <thead>
+                  <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
+                  <tr>
+                    <th>Month</th>
+                    <th>GRPs</th>
+                    <th>SOV</th>
+                    <th>Duration</th>
+                    <th>Months</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>520</td>
+                    <td>40%</td>
+                    <td>15</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>540</td>
+                    <td>30%</td>
+                    <td>15</td>
+                    <td>18</td>
+                  </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>720</td>
+                    <td>60%</td>
+                    <td>16</td>
+                    <td>12</td>
+                  </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>375</td>
+                    <td>25%</td>
+                    <td>18</td>
+                    <td>15</td>
+                  </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>715</td>
+                    <td>55%</td>
+                    <td>09</td>
+                    <td>13</td>
+                  </tr>
+                 <tr>
+                    <td>6</td>
+                    <td>525</td>
+                    <td>35%</td>
+                    <td>16</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>756</td>
+                    <td>45%</td>
+                    <td>12</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>300</td>
+                    <td>15%</td>
+                    <td>25</td>
+                    <td>12</td>
+                  </tr>
+                  <td>9</td>
+                    <td>490</td>
+                    <td>35%</td>
+                    <td>12</td>
+                    <td>14</td>
+                  </tr>
+                  <td>10</td>
+                    <td>532</td>
+                    <td>38%</td>
+                    <td>13</td>
+                    <td>14</td>
+                  </tr>
+            </tbody>
+        </table>
+     <!-- Ετικέτα κάτω από τον πίνακα-->
+              <h3>Target Group: Children 10-18</h3>
+            </div>
                 <div class="col-sm-1">
                     <a href="#" class="btn btn-danger btn-lg" style="margin-top: 5px;">
                         <span class="glyphicon glyphicon-print"></span> Print 
@@ -39,27 +126,46 @@
             <div class="col-sm-6">
               <div class="container-fluid">
                 <h2>View previous reports</h2>
-                <p>Type only the year of a particular report</p>  
+                <p>Type only the year of a particular report(reporting occurs every 3 months)</p>  
                 <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
                 <br>
                 <ul class="list-group" id="myList">
-                  <li class="list-group-item">Aegean-Campaign-2022-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2022-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2022-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2022-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2022-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2021-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2021-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2021-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2021-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2020-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2020-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2020-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2020-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2019-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2019-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2019-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2019-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2018-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2018-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2018-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2018-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2017-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2017-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2017-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2017-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2016-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2016-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2016-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2016-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2015-d</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2015-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2015-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2015-a</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2014-d</li>                
+                  <li class="list-group-item">Coca Cola-Campaign-2014-c</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2014-b</li>
+                  <li class="list-group-item">Coca Cola-Campaign-2014-a</li>
                   
                 </ul>  
               </div>
@@ -79,8 +185,206 @@
        
     </div>
     <div id="menu2" class="tab-pane fade">
-        <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
-        <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+       <br>
+      <form>
+      <div class="row" style="margin-top: 25px;">
+        <div class=col-sm-1>
+          <h1>TV</h1>
+        </div>
+        <div class="col-sm-1">
+          <!-- Chechboxes για τους δείκτες TV-->
+          <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>GRPs</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>Reach 1+</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Reach 3+</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>SOV</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Insertions</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Duration</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Grps/Week</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Weeks</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Weeks(4X)</h4>
+          </label>
+        </div>
+      </div>
+        <hr>
+      <form>
+        <div class="row" style="margin-top: 25px;">
+          <!-- Chechboxes για τους δείκτες του Internet-->
+          <div class=col-sm-1>
+            <h1>Internet</h1>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Impressions</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Clicks</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+                <input type="checkbox" value=""><h4>Click Rate</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+                <input type="checkbox" value=""><h4>Viewability</h4>
+            </label>
+          </div>
+        </div>
+        <hr>
+      <br>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="form-group">
+            <!-- Τίτλος -->
+            <label for="comment">How would you like your reports?</label>
+            <!-- Περιοχή για να γράψεις κείμενο-->
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div> 
+        </div>
+        <br><br><br>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+           <!-- Κουμπί για submit -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" 
+            data-target="#myModal">Submit</button>
+          </div>
+        </div>
+        <hr>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="form-group">
+            <!-- Τίτλος και textarea μιας γραμμής-->
+            <label for="usr">Available Budget:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+        </div>
+         <!-- Τίτλος-->
+        <div class="col-sm-2"><h3>Planner's Estimation<br>for 80.000€:</h3></div>
+          <div class="col-sm-8">
+          <!-- Πίνακας report-->
+              <table class="table table-striped">
+                <thead>
+                  <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
+                  <tr>
+                    <th>Month</th>
+                    <th>GRPs</th>
+                    <th>SOV</th>
+                    <th>Duration</th>
+                    <th>Months</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>520</td>
+                    <td>40%</td>
+                    <td>15</td>
+                    <td>13</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>540</td>
+                    <td>30%</td>
+                    <td>15</td>
+                    <td>18</td>
+                  </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>720</td>
+                    <td>60%</td>
+                    <td>16</td>
+                    <td>12</td>
+                  </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>375</td>
+                    <td>25%</td>
+                    <td>18</td>
+                    <td>15</td>
+                  </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>715</td>
+                    <td>55%</td>
+                    <td>09</td>
+                    <td>13</td>
+                  </tr>
+                 <tr>
+                    <td>6</td>
+                    <td>525</td>
+                    <td>35%</td>
+                    <td>16</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>756</td>
+                    <td>45%</td>
+                    <td>12</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>300</td>
+                    <td>15%</td>
+                    <td>25</td>
+                    <td>12</td>
+                  </tr>
+                  <td>9</td>
+                    <td>490</td>
+                    <td>35%</td>
+                    <td>12</td>
+                    <td>14</td>
+                  </tr>
+                  <td>10</td>
+                    <td>532</td>
+                    <td>38%</td>
+                    <td>13</td>
+                    <td>14</td>
+                  </tr>
+            </tbody>
+        </table>
+        </div>
+      </div>
+     </form>
+    </div> 
+
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
@@ -118,10 +422,8 @@
                 <img src="../IMAGES/img_avatar.png" class="media-object" style="width:80px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Top</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="media-heading">Coca Cola-Campaign-2020-c</h4>
+                <p>satisfying performance, they managed to succeed all the goals i had put.</p>
               </div>
             </div>
             <hr>
@@ -130,10 +432,8 @@
                 <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:80px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Middle</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="media-heading">Coca Cola-Campaign-2022-d</h4>
+                <p>I am very pleased by their perfomance. Although i had expected a bigger increase the results remain more efficient than last month.</p>
               </div>
             </div>
             <hr>
