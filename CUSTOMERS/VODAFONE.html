@@ -11,26 +11,111 @@
 <body>
 
 <div class="container-fluid">
-  
+  <!-- Φτιάχνει την μπάρα του μενού πάνω πάνω-->
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#latest-report" style="font-size: 20px; 
-    color:crimson">Latest Report</a></li>
-    <li><a data-toggle="tab" href="#menu1" style="font-size: 20px; color:crimson">History</a></li>
-    <li><a data-toggle="tab" href="#menu2" style="font-size: 20px; color:crimson">Client Goals</a></li>
-    <li><a data-toggle="tab" href="#menu3" style="font-size: 20px; color:crimson">Campaign Evaluation</a></li>
-    <li><a href="../HTML/Planner_screen.html" class="btn btn-danger active"  role="button" 
+    <li class="active"><a data-toggle="tab" href="#latest-report" style="font-size: 20px;">Latest Report</a></li>
+    <li><a data-toggle="tab" href="#menu1" style="font-size: 20px;">History</a></li>
+    <li><a data-toggle="tab" href="#menu2" style="font-size: 20px;">Preferences</a></li>
+    <li><a data-toggle="tab" href="#menu3" style="font-size: 20px;">Campaign Evaluation</a></li>
+    <li><a href="../HTML/Planner_screen.html" class="btn btn-primary active"  role="button" 
       style="font-size: 20px;">Change Client</a></li>
   </ul>
 
   <div class="tab-content">
     <div id="latest-report" class="tab-pane fade in active">
         <div class="row">
-            <div class="col-sm-11"></div>
-                <div class="col-sm-1">
-                    <a href="#" class="btn btn-danger btn-lg" style="margin-top: 5px;">
-                        <span class="glyphicon glyphicon-print"></span> Print 
-                    </a>
-                </div>
+            <div class="col-sm-7">
+              <br>
+              <!-- Πίνακας report-->
+              <table class="table table-striped">
+                <thead>
+                  <!-- Κάθε μπλοκ και μία γραμμή του πίνακα-->
+                  <tr>
+                    <th>Dimensions</th>
+                    <th>Impressions</th>
+                    <th>Clicks</th>
+                    <th>Click Rate</th>
+                    <th>Viewability</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>728 × 90 px</td>
+                    <td>314</td>
+                    <td>21</td>
+                    <td>6.7%</td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td>336 × 280 px</td>
+                    <td>1240</td>
+                    <td>97</td>
+                    <td>7.8%</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <td>300 × 250 px</td>
+                    <td>537</td>
+                    <td>125</td>
+                    <td>23%</td>
+                    <td>70</td>
+                  </tr>
+                  <tr>
+                    <td>160 × 600 px</td>
+                    <td>35</td>
+                    <td>2</td>
+                    <td>5.7%</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>120 × 600 px</td>
+                    <td>188</td>
+                    <td>92</td>
+                    <td>48.9%</td>
+                    <td>90</td>
+                  </tr>
+                  <tr>
+                    <td>120 × 90 px</td>
+                    <td>5240</td>
+                    <td>234</td>
+                    <td>4.5%</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>120 × 60 px</td>
+                    <td>126</td>
+                    <td>21</td>
+                    <td>16.7%</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <td>88 × 31 px</td>
+                    <td>52</td>
+                    <td>2</td>
+                    <td>3.8%</td>
+                    <td>5</td>
+                  <tr>
+                      <td>120 x 860 px</td>
+                      <td>3876</td>
+                      <td>441</td>
+                      <td>11.4%</td>
+                      <td>90</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Ετικέτα κάτω από τον πίνακα-->
+              <h3>Target Group: Adults 18-40</h3>
+            </div>
+            <!-- Η από κάτω γραμμή μας πάει 4 θέσεις πιο αριστερά στην σελίδα(όπου όλες οριζόντια είναι 12)-->
+            <div class="col-sm-4"></div>
+            <!-- Η από κάτω γραμμή δηλώνει ότι θα δευσμετεί 1 θέση (στις 12) για αυτό που θα βάλουμε-->
+            <div class="col-sm-1">
+              <br> 
+              <!-- Κουμπί για εκτύπωση (primary είναι για χρώμα)-->
+              <a href="#" class="btn btn-primary btn-lg" onclick="window.print()">
+                <span class="glyphicon glyphicon-print" ></span> Print 
+              </a>
+            </div>
         </div>
         
     </div>
@@ -38,32 +123,36 @@
         <div class="row">
             <div class="col-sm-6">
               <div class="container-fluid">
+                <!-- Λίστα ιστορικού που ανταποκρίνεται στην αναζήτηση-->
                 <h2>View previous reports</h2>
-                <p>Type only the year of a particular report</p>  
+                <p>Type only the year of a particular report (reporting occurs every 4 months)</p>  
                 <input class="form-control" id="myInput" type="text" placeholder="Search Campaign Date">
                 <br>
                 <ul class="list-group" id="myList">
-                  <li class="list-group-item">Aegean-Campaign-2022-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2021-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2020-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2019-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2018-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2017-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2016-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2015-a</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-b</li>
-                  <li class="list-group-item">Aegean-Campaign-2014-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2022-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2021-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2021-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2021-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2020-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2020-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2020-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2019-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2019-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2019-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2018-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2018-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2018-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2017-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2017-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2017-a</li>
+                  <li class="list-group-item">Vodafone-Campaign-2016-c</li>
+                  <li class="list-group-item">Vodafone-Campaign-2016-b</li>
+                  <li class="list-group-item">Vodafone-Campaign-2016-a</li>
                   
                 </ul>  
               </div>
               
+              <!-- Javascript για να ανταποκρίνεται στην αναζήτηση (περιορίζει τις επιλογές)-->
               <script>
               $(document).ready(function(){
                 $("#myInput").on("keyup", function() {
@@ -79,61 +168,254 @@
        
     </div>
     <div id="menu2" class="tab-pane fade">
-        <br><br><br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
-        <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> 
+      <br>
+      <form>
+      <div class="row" style="margin-top: 25px;">
+        <div class=col-sm-1>
+          <h1>TV</h1>
+        </div>
+        <div class="col-sm-1">
+          <!-- Chechboxes για τους δείκτες TV-->
+          <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>GRPs</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+            <input type="checkbox" value=""><h4>Reach 1+</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Reach 3+</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>SOV</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Insertions</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Duration</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Grps/Week</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Weeks</h4>
+          </label>
+        </div>
+        <div class="col-sm-1">
+          <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Weeks(4X)</h4>
+          </label>
+        </div>
+      </div>
+      <hr>
+      <form>
+        <div class="row" style="margin-top: 25px;">
+          <!-- Chechboxes για τους δείκτες του Internet-->
+          <div class=col-sm-1>
+            <h1>Internet</h1>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Impressions</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+              <input type="checkbox" value=""><h4>Clicks</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+                <input type="checkbox" value=""><h4>Click Rate</h4>
+            </label>
+          </div>
+          <div class="col-sm-1">
+            <label class="checkbox-inline">
+                <input type="checkbox" value=""><h4>Viewability</h4>
+            </label>
+          </div>
+        </div>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="form-group">
+            <!-- Τίτλος -->
+            <label for="comment">How would you like your reports?</label>
+            <!-- Περιοχή για να γράψεις κείμενο-->
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div> 
+        </div>
+        <br><br><br>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+           <!-- Κουμπί για submit -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" 
+            data-target="#myModal">Submit</button>
+          </div>
+        </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="form-group">
+            <!-- Τίτλος και textarea μιας γραμμής-->
+            <label for="usr">Available Budget:</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+        </div>
+        
+        <!-- Τίτλος-->
+        <div class="col-sm-2"><h3>Planner's Estimation<br>for 35.000€:</h3></div>
+          <div class="col-sm-8">
+          <!-- Πίνακας των εκτιμήσεων-->
+            <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Dimensions</th>
+                <th>Impressions</th>
+                <th>Clicks</th>
+                <th>Click Rate</th>
+                <th>Viewability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>728 × 90 px</td>
+                <td>380</td>
+                <td>35</td>
+                <td>9.2%</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>336 × 280 px</td>
+                <td>1100</td>
+                <td>120</td>
+                <td>10.9%</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td>300 × 250 px</td>
+                <td>900</td>
+                <td>100</td>
+                <td>11.1%</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>160 × 600 px</td>
+                <td>25</td>
+                <td>1</td>
+                <td>4%</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>120 × 600 px</td>
+                <td>188</td>
+                <td>92</td>
+                <td>48.9%</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>120 × 90 px</td>
+                <td>6500</td>
+                <td>400</td>
+                <td>6.1%</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>120 × 60 px</td>
+                <td>100</td>
+                <td>15</td>
+                <td>15%</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>88 × 31 px</td>
+                <td>65</td>
+                <td>4</td>
+                <td>6.1%</td>
+                <td>10</td>
+              <tr>
+                  <td>120 x 860 px</td>
+                  <td>4000</td>
+                  <td>500</td>
+                  <td>12.5%</td>
+                  <td>95</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+     </form>
+    </div> 
+    
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-2">
-                <div class="modal fade" id="myModal" role="dialog">
+              <!-- Στην ουσία μαυρίζει η γύρω οθόνη και πετάγεται ένα πλαίσιο μόλις πατήσεις το κουμπί submit-->  
+              <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Goals Submitted!</h4>
+                              <!-- Αυτά θα γράφει μέσα το πλαίσιο--> 
+                              <h4 class="modal-title">Form complete!</h4>
                         </div>
                     <div class="modal-body">
-                        <p>Thank you for sharing your preferences and desired goals.</p>
+                        <p>Thank you for sharing your preferences.</p>
                     </div>
+                    <!-- Κουμπί για να φύγει το πλαίσιο-->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                      </div>
                     </div>
-      
-                    </div>
                 </div>
-                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
-            </div>
         </div>
-       
-
-     
-    </div>
+       </div>
+      </div>
     <div id="menu3" class="tab-pane fade">
         <div class="container">
-            <h2>Media Object</h2>
-            <p>The media object can also be top, middle or bottom-aligned with the "media-top", "media-middle" or "media-bottom" class:</p><br>
+            <h2>Comments</h2>
+            <br>
             <div class="media">
               <div class="media-left media-top">
-                <img src="../IMAGES/img_avatar.png" class="media-object" style="width:80px">
+                <!-- Εικονίδιο χρήστη-->
+                <img src="../IMAGES/img_avatar.png" class="media-object" style="width:100px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Top</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <!-- Τίτλος και περιεχόμενα σχολίων-->
+                <h3 class="media-heading">Vodafone-Campaign-2021-c</h3>
+                <p style="font-size: 17px;"> During this campaign, the click rate was increased impressively! This could be a result of using
+                  video ads in your website!
+                </p>
               </div>
             </div>
             <hr>
+            <br>
             <div class="media">
               <div class="media-left media-middle">
-                <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:80px">
+                <!-- Εικονίδιο χρήστη-->
+                <img src="../IMAGES/img_avatar2.png" class="media-object" style="width:100px">
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Media Middle</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <!-- Τίτλος και περιεχόμενα σχολίων-->
+                <h3 class="media-heading">Vodafone-Campaign-2020-c</h3>
+                <p style="font-size: 17px;">Very good performance. The statistics for the internet campain were pretty much the same
+                  with planner's estimation! Congrats!</p>
               </div>
             </div>
             <hr>
