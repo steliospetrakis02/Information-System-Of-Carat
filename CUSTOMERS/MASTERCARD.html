@@ -25,7 +25,7 @@
   <div class="tab-content">
     <div id="latest-report" class="tab-pane fade in active">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-6">
               <br>
               <!-- Πίνακας report-->
               <table class="table table-striped">
@@ -177,16 +177,27 @@
                 </tbody>
               </table>
               <!-- Ετικέτα κάτω από τον πίνακα-->
-              <h3>Target Group: Adults 22-60</h3>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h3>Target Group: Adults 22-60</h3>
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2" style="margin-top: 10px;">
+                  <div class="btn btn-warning btn-lg active">
+                    <span class="glyphicon glyphicon-edit">Report</span>
+                  </div>
+                </div> 
+              </div>
+             
             </div>
             <!-- Η από κάτω γραμμή μας πάει 4 θέσεις πιο αριστερά στην σελίδα(όπου όλες οριζόντια είναι 12)-->
-            <div class="col-sm-4"></div>
+            <div class="col-sm-5"></div>
             <!-- Η από κάτω γραμμή δηλώνει ότι θα δευσμετεί 1 θέση (στις 12) για αυτό που θα βάλουμε-->
             <div class="col-sm-1">
               <br> 
               <!-- Κουμπί για εκτύπωση (primary είναι για χρώμα)-->
-              <a href="#" class="btn btn-warning active btn-lg" onclick="window.print()">
-                <span  class="glyphicon glyphicon-print" ></span> Print 
+              <a href="#" class="btn btn-warning btn-lg" onclick="window.print()">
+                <span class="glyphicon glyphicon-print" ></span> Print 
               </a>
             </div>
         </div>
